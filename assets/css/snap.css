@@ -1,0 +1,259 @@
+body {
+    overflow-x: hidden;
+}
+
+/* .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+} */
+
+/* Preview Box - Fixed Center */
+.preview-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 370px;
+    height: 370px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.preview-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.preview-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.preview-link:hover {
+    transform: scale(1.05);
+}
+
+.preview-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/* Scroll Container - Smooth without snap */
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar but keep functionality */
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Banners */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: none;
+}
+
+.banner-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.banner-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Banner Text Elements */
+.banner-text-left {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.banner-text-left h2 {
+    color: #FFF;
+    font-family: Lexend;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.banner-text-right {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 400px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.banner-text-right p {
+    color: #FFF;
+    font-family: Lexend;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 250px;
+}
+
+/* Sticky behavior */
+.banner.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    opacity: 1 !important;
+}
+
+/* Preview Box Animation States */
+.preview-box.active {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Hide preview box on mobile */
+    .preview-box {
+        display: none;
+    }
+    
+    /* Disable sticky behavior on mobile */
+.banner.sticky {
+    position: relative !important;
+    min-height: auto;
+}
+    
+    /* Change banner to vertical layout */
+    .banner {
+        height: auto;
+        min-height: 45vh;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .banner-link {
+        position: relative;
+        width: 100%;
+        height: auto;
+        order: 1;
+    }
+    
+    .banner-img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+    
+    .banner-text-left {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        width: 100%;
+        text-align: left;
+        margin-top: 0px;
+        order: 2;
+    }
+    
+    .banner-text-left h2 {
+        font-size: 2.5em;
+        color: #fff;
+        text-shadow: none;
+    }
+    
+    .banner-text-right {
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: none;
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+        margin-top: 0;
+        order: 3;
+    }
+    
+    .banner-text-right p {
+        font-size: 1.2em;
+        color: #fff;
+        text-shadow: none;
+    }
+    
+.scroll-container {
+    overflow-y: unset;
+    scroll-behavior: unset;
+}
+    
+    .banner-link:active {
+        opacity: 1;
+    }
+    
+    .preview-link:active {
+        transform: scale(0.95);
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text-left h2 {
+        font-size: 2em;
+    }
+    
+    .banner-text-right p {
+        font-size: 1em;
+        padding: 0;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .preview-link:hover {
+        transform: scale(1);
+    }
+    
+    .preview-link:active {
+        transform: scale(0.95);
+    }
+}

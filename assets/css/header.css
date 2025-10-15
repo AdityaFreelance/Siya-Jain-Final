@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    overflow-x: hidden !important;
+} */
+
+@font-face {
+    font-family: 'Droog';
+    src: url('../fonts/fonnts.com-Droog_Heavy.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Sideboard";
+    src: url("../fonts/sideboard-font/sideboard-personaluseonly.otf") format("otf)");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+
+.footer-content {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Css Start */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0C0C0C;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+header.is-sticky {
+    background-color: rgba(12, 12, 12, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    animation: slideDown 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-10%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar-brand {
+    font-family: 'Droog';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: normal;
+    color: #C76135;
+    text-decoration: none;
+}
+
+.menu-collapse-btn {
+    display: none;
+    background-color: transparent;
+    padding: 0px;
+    border: 0px;
+}
+
+nav.nav-bar {
+    display: flex;
+    align-items: center;
+    padding-block: 35px;
+}
+
+.menu-collapse-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 26px;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+.menu-collapse-box ul {
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #212021;
+    display: flex;
+    align-items: center;
+    gap: 0px 26px;
+}
+
+.navbar-link {
+    text-decoration: unset;
+    color: #F1E9E6 !important;
+    font-size: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.navbar-box-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #212021;
+}
+
+/* Header Css End */
+
+
+/* responsive header Css */
+
+@media screen and (max-width:1680px) {
+    nav.nav-bar {
+        padding-block: 25px;
+    }
+
+    .menu-collapse-box ul {
+        padding: 8px 18px;
+        border-radius: 10px;
+        gap: 0px 24px;
+    }
+
+    nav.nav-bar {
+        padding-block: 20px;
+    }
+
+    .navbar-box-btn {
+        padding: 7px 15px;
+        border-radius: 9px;
+    }
+
+    .menu-collapse-box ul {
+        padding: 8px 15px;
+        border-radius: 9px;
+        gap: 0px 24px;
+    }
+
+    .navbar-link {
+        font-size: 15px;
+        padding: 8px;
+        border-radius: 9px;
+    }
+
+    .navbar-brand {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .navbar-brand {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .menu-collapse-box {
+        display: none;
+    }
+
+    .menu-collapse-btn {
+        display: inline-flex !important;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 23px;
+        color: #F1E9E6;
+        cursor: pointer;
+    }
+
+    nav.nav-bar {
+        justify-content: space-between;
+    }
+
+    header.mobile-header {
+        position: relative;
+    }
+
+    .menu-collapse-box-active {
+        display: flex !important;
+        flex-direction: column;
+        padding: 10px 15px;
+        position: absolute;
+        align-items: flex-start;
+        top: 68px;
+        width: 100%;
+        background-color: #212021;
+        left: 0px;
+        gap: 8px 0px;
+    }
+
+    .menu-collapse-box ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-collapse-box ul,
+    .navbar-box-btn {
+        padding: 0px;
+        border-radius: 0px;
+        gap: 8px 0px;
+        background-color: transparent;
+    }
+
+    .navbar-link {
+        font-size: 14px;
+        padding: 0px;
+        border-radius: 0px;
+    }
+}

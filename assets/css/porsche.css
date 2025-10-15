@@ -1,0 +1,1381 @@
+/* banner-wrapper Css Start */
+.banner-wrapper {
+    background-image: url(../img/porsche/Banner-image.png);
+}
+
+/* banner-wrapper Css End */
+
+/*detail-wrapper Css Start */
+.detail-section-heading p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    margin-bottom: 0px;
+}
+
+/*detail-wrapper Css End */
+
+/* portfolio-wrapper Css Start */
+
+.portfolio-wrapper .container>.custom-row .custom-col-12:nth-child(2n) .custom-row .custom-col-6:has(.port-content) {
+    order: -1;
+}
+
+/* portfolio-wrapper Css End */
+
+
+/* design-wrapper Css Start */
+
+.design-cover>.custom-row {
+    margin-inline: -85px;
+    gap: 130px 0px;
+}
+
+.design-cover>.custom-row>.custom-col-6 {
+    padding-inline: 85px;
+}
+
+.design-box .custom-row {
+    margin-inline: -45px;
+}
+
+.design-box .custom-row .custom-col-7,
+.design-box .custom-row .custom-col-5 {
+    padding-inline: 45px;
+    position: relative;
+}
+
+.design-box .custom-row .custom-col-7::before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    border-top: 1px dotted #231F20;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1px;
+}
+
+.design-box .custom-row .custom-col-5::after {
+    content: "";
+    width: 45px;
+    height: 1px;
+    border-top: 1px dotted #231F20;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+}
+
+
+
+.design-box-cover {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    background: #D7D1B3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.design-box-cover h3 {
+    font-weight: 400;
+    font-size: var(--font-24px);
+    margin-bottom: 0px;
+    transition: color 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.design-box-cover:hover {
+    background: #8E834C;
+}
+
+.design-box-cover:hover h3,
+.design-box-cover:has(span.active-profile) h3 {
+    color: #fff;
+}
+
+span.active-profile {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 145px;
+    z-index: -1;
+    opacity: 1;
+    top: -125px;
+    opacity: 1;
+    transform: translate(-50%, 0%);
+}
+
+.design-box-cover:has(span.active-profile) {
+    background-color: #8E834C;
+}
+
+span.active-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+.design-cover {
+    margin-top: 125px;
+}
+
+/* design-wrapper Css End */
+
+/* design-framework-wrapper Css Start */
+.design-framework-wrapper>.container>.custom-row {
+    gap: 10px 0px;
+}
+
+.design-framework-wrapper h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    margin-bottom: 25px;
+}
+
+.design-framework-cover-box ul,
+.design-framework-container>ul {
+    display: flex;
+    align-items: center;
+    margin-inline: -6px;
+}
+
+.design-framework-cover-box ul li,
+.design-framework-container>ul>li {
+    width: 16.667%;
+    flex: 0 0 auto;
+    padding-inline: 6px;
+}
+
+.design-framework-container-box {
+    position: relative;
+}
+
+.design-framework-container ul {
+    display: none;
+}
+
+.design-framework-container-box::before {
+    content: "";
+    width: 2px;
+    height: 73%;
+    border-left: 1px dotted #231F20;
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.design-frame-container img {
+    width: 100%;
+}
+
+.design-frame-container {
+    max-width: 79%;
+    margin-right: auto;
+    margin-top: -5%;
+}
+
+.design-framework-container-box::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #231F20;
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.design-framework-container>ul>li:nth-child(1) .design-framework-container-box::before,
+.design-framework-container>ul>li:nth-child(1) .design-framework-container-box::after,
+.design-framework-container>ul>li:nth-child(6) .design-framework-container-box::before,
+.design-framework-container>ul>li:nth-child(6) .design-framework-container-box::after {
+    display: none;
+}
+
+.design-framework-container-box ul {
+    display: flex;
+    align-items: flex-end;
+    margin-inline: -10px;
+    height: 100%;
+}
+
+.design-framework-container-box ul li {
+    width: 50%;
+    height: 100%;
+    flex: 0 0 auto;
+    padding-inline: 10px;
+}
+
+.design-framework-box {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10px;
+}
+
+.design-framework-box h3 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    margin-bottom: 0px;
+}
+
+.design-framework-cover-box ul li:nth-child(1) .design-framework-box {
+    background-color: #D7D1B3;
+}
+
+.design-framework-cover-box ul li:nth-child(2) .design-framework-box {
+    background-color: #C2BB97;
+}
+
+.design-framework-cover-box ul li:nth-child(3) .design-framework-box {
+    background-color: #B7AD7E;
+}
+
+.design-framework-cover-box ul li:nth-child(4) .design-framework-box {
+    background-color: #ACA169;
+}
+
+.design-framework-cover-box ul li:nth-child(5) .design-framework-box {
+    background-color: #9E935C;
+}
+
+.design-framework-cover-box ul li:nth-child(6) .design-framework-box {
+    background-color: #8E834C;
+}
+
+.design-framework-container-box {
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.design-framework-container-box-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.design-framework-container-box-content::before {
+    content: "";
+    width: 2px;
+    height: 73%;
+    border-left: 1px dotted #231F20;
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.design-framework-container-box-content::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #231F20;
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+    border-radius: 50%;
+    left: 49%;
+    transform: translateX(-50%);
+}
+
+
+.design-framework-container-box h4 {
+    position: relative;
+    padding-top: 5px;
+    font-weight: 400;
+    font-size: var(--font-24px);
+}
+
+.design-framework-container-box h4::before {
+    content: "";
+    width: 41px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #231F20;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.design-framework-container-box p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    margin-bottom: 0px;
+    line-height: normal;
+}
+
+.design-framework-container>ul>li:last-child h4::before {
+    display: none;
+}
+
+/* design-framework-wrapper Css End */
+
+
+/* research-approach-wrapper Css Start */
+.research-approach-wrapper>.container>.custom-row {
+    gap: 150px 0px;
+}
+
+.research-approach-wrapper>.container>.custom-row>.custom-col-12>h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    margin-bottom: 25px;
+}
+
+.research-approach-wrapper>.container>.custom-row>.custom-col-12>p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    margin-bottom: 0px;
+}
+
+.approach-heading-cover {
+    display: flex;
+    align-items: center;
+    margin-inline: -25px;
+}
+
+.approach-heading-cover>div {
+    padding-inline: 25px;
+    flex: 0 0 auto;
+}
+
+.approach-heading-icon {
+    width: 275px;
+}
+
+.approach-heading-content {
+    width: calc(100% - 275px);
+}
+
+.approach-heading-content h3 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    margin-bottom: 0px;
+}
+
+.approach-heading-content h3 span {
+    color: #8E834C;
+}
+
+.approach-list-cover ul {
+    display: flex;
+    align-items: center;
+    margin-inline: -20px;
+}
+
+.approach-list-cover ul li {
+    width: 33.333%;
+    flex: 0 0 auto;
+    padding-inline: 20px;
+}
+
+.approach-list-box {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+.approach-list-cover ul li:nth-child(1) .approach-list-box {
+    background-image: url(../img/porsche/approach1.png);
+}
+
+.approach-list-cover ul li:nth-child(2) .approach-list-box {
+    background-image: url(../img/porsche/approach2.png);
+}
+
+.approach-list-cover ul li:nth-child(3) .approach-list-box {
+    background-image: url(../img/porsche/approach3.png);
+}
+
+.approach-list-box h3 {
+    font-weight: 400;
+    font-size: var(--font-56px);
+    line-height: normal;
+    color: #D8D8DB;
+    margin-bottom: 25px;
+}
+
+.approach-list-box p {
+    font-weight: 200;
+    font-size: var(--font-20px);
+    color: #D8D8DB;
+    margin-bottom: 0px;
+}
+
+/* research-approach-wrapper Css End */
+
+/* Ev-wrapper Css Start */
+.Ev-wrapper {
+    background-image: url(../img/porsche/ev-image.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    padding-top: 290px;
+    padding-bottom: 60px;
+}
+
+.Ev-wrapper .custom-col-7 span {
+    font-weight: 400;
+    font-size: var(--font-20px);
+    margin-bottom: 25px;
+    display: inline-block;
+    color: #878787;
+}
+
+.Ev-wrapper .container>.custom-row {
+    gap: 145px 0px;
+}
+
+.Ev-wrapper .custom-col-7 h2 {
+    font-weight: 400;
+    font-size: var(--font-40px);
+    color: #F1E9E6;
+}
+
+.ev-wrapper-cover h3 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    margin-bottom: 25px;
+    color: #878787;
+}
+
+.ev-wrapper-cover p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    margin-bottom: 0px;
+    color: #878787;
+}
+
+/* Ev-wrapper Css End */
+
+/* how-wrapper Css Start */
+
+.how-wrapper-heading-cover {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.how-heading-cover-image {
+    width: 200px;
+    flex: 0 0 auto;
+}
+
+.how-heading-cover-content {
+    /* width: calc(100% - 200px);
+    padding-right: 200px; */
+    width: 100%;
+    flex: 0 0 auto;
+    height: 100%;
+}
+
+.how-heading-cover-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -50px;
+    height: 100%;
+}
+
+.how-heading-cover-col-3 {
+    width: 30%;
+    flex: 0 0 auto;
+    padding-inline: 50px;
+}
+
+.how-heading-cover-col-7 {
+    width: 70%;
+    flex: 0 0 auto;
+    padding-inline: 50px;
+    height: 100%;
+}
+
+.how-heading-cover-row h2 {
+    font-weight: 400;
+    font-size: var(--font-24px);
+    margin-bottom: 0px;
+    color: #8E834C;
+}
+
+.how-heading-cover-row p {
+    font-weight: 200;
+    font-size: var(--font-20px);
+    margin-bottom: 0px;
+}
+
+.how-heading-cover-col-7-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    gap: 30px 0px;
+}
+
+.competitor-image::before {
+    content: "+";
+    font-weight: 600;
+    font-size: 39px;
+    height: fit-content;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    top: 43%;
+    transform: translateY(-57%);
+    left: 0px;
+}
+
+.competitor-image {
+    position: relative;
+    padding-left: 30px;
+}
+
+.custom-col-12:has(.how-second-image) .custom-row {
+    margin-inline: -42px;
+}
+
+.custom-col-12:has(.how-second-image) .custom-row .custom-col-8,
+.custom-col-12:has(.how-second-image) .custom-row .col-lg-4 {
+    padding-inline: 42px;
+}
+
+.how-second-image img {
+    width: 100%;
+}
+
+.custom-col-12:has(.how-second-image) .custom-row .custom-col-8 h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    margin-bottom: 0px;
+}
+
+.custom-col-12:has(.how-second-image) .custom-row .custom-col-8 h2 span {
+    color: #8E834C;
+}
+
+.how-wrapper>.container>.custom-row {
+    gap: 150px 0px;
+}
+
+.how-third-section .custom-row {
+    margin-inline: -50px;
+}
+
+.how-third-section .custom-row .custom-col-6 {
+    padding-inline: 50px;
+}
+
+.how-third-image {
+    margin-bottom: 10px;
+}
+
+.how-third-image-content h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    margin-bottom: 25px;
+}
+
+.how-third-image-content p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    margin-bottom: 0px;
+}
+
+/* how-wrapper Css End */
+
+/* competitor-wrapper Css Start */
+.competitor-wrapper>.container>.custom-row {
+    gap: 90px 0px;
+}
+
+.competitor-wrapper h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.competitor-wrapper p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+}
+
+.competitor-box {
+    height: 100%;
+}
+
+.competitor-cover .custom-col-8>.custom-row {
+    margin-inline: -25px;
+    gap: 50px 0px;
+}
+
+.competitor-cover .custom-col-8>.custom-row>.custom-col-6 {
+    padding-inline: 25px;
+}
+
+.competitor-box .custom-row {
+    margin-inline: -12px;
+    height: 100%;
+}
+
+.competitor-box .custom-row .custom-col-6 {
+    padding-inline: 12px;
+    height: 100%;
+}
+
+.competitor-box p {
+    font-weight: 200;
+    font-size: var(--font-20px);
+    margin-bottom: 0px;
+}
+
+.competitor-box-image {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.competitor-box .custom-row .custom-col-6:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+/* competitor-wrapper Css End */
+
+
+/* experience-wrapper Css Start */
+.experience-wrapper h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.experience-wrapper p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.experience-wrapper-image img {
+    width: 100%;
+}
+
+.experience-wrapper>.container>.custom-row {
+    margin-inline: -55px;
+}
+
+.experience-wrapper>.container>.custom-row>.custom-col-6 {
+    padding-inline: 55px;
+}
+
+/* experience-wrapper Css End */
+
+
+/* design-principals-wrapper Css Start */
+.design-principals-wrapper h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.design-principals-wrapper p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.design-principals-wrapper .custom-row {
+    gap: 30px 0px;
+}
+
+.design-principal-cover h3 {
+    font-weight: 400;
+    font-size: var(--font-24px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.design-principals-box {
+    background-color: #D7D1B3;
+    padding: 30px 15px;
+    border-radius: 25px;
+    min-height: 220px;
+}
+
+.design-principal-cover ul li {
+    margin-inline: 20px;
+}
+
+/* design-principals-wrapper Css End */
+
+/* target-wrapper-porsche Css Start */
+.target-wrapper-porsche {
+    padding-top: 40px;
+    position: relative;
+    z-index: 99;
+    height: 530px;
+}
+
+.target-wrapper-porsche::before {
+    content: "";
+    width: 33.33%;
+    height: 100%;
+    background-image: url(../img/porsche/target-image1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.target-wrapper-porsche::after {
+    content: "";
+    width: 33.33%;
+    height: 100%;
+    background-image: url(../img/porsche/target-image2.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.target-wrapper-porsche>.container {
+    position: static;
+}
+
+.target-wrapper-porsche>.container::before {
+    content: "";
+    width: 33.33%;
+    height: 100%;
+    background-image: url(../img/porsche/target-image3.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.target-wrapper-porsche h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    margin-bottom: 118px;
+    color: #F1E9E6;
+}
+
+.target-wrapper-porsche-cover .custom-row {
+    margin-inline: -50px;
+}
+
+.target-wrapper-porsche-cover .custom-row .custom-col-4 {
+    padding-inline: 50px;
+}
+
+.target-porsche-box h3 {
+    font-weight: 400;
+    font-size: var(--font-24px);
+    margin-bottom: 25px;
+    color: #F1E9E6;
+}
+
+.target-porsche-box p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    margin-bottom: 0px;
+    color: #F1E9E6;
+}
+
+/* target-wrapper-porsche Css End */
+
+
+/* storyboard-wrapper Css Start */
+.storyboard-wrapper h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.storyboard-wrapper p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.storyboard-image img {
+    width: 100%;
+}
+
+/* storyboard-wrapper Css End */
+
+/* infotainment-guideline-wrapper Css Start */
+.infotainment-guideline-wrapper .custom-row {
+    margin-inline: -50px;
+}
+
+.infotainment-guideline-wrapper .custom-row .custom-col-6 {
+    padding-inline: 50px;
+}
+
+.infotainment-guideline-wrapper h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.infotainment-guideline-wrapper p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.infotainment-guideline-cover {
+    height: 550px;
+}
+
+.infotainment-slider .slick-slide {
+    height: auto;
+}
+
+.infotainment-guideline-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.infotainment-guideline-box-image {
+    width: 140px;
+    flex: 0 0 auto;
+}
+
+.infotainment-guideline-image-content {
+    width: calc(100% - 140px);
+    padding-left: 20px;
+}
+
+.infotainment-guideline-image-content h3 {
+    font-weight: 400;
+    font-size: var(--font-24px);
+    margin-bottom: 20px;
+}
+
+.infotainment-guideline-image-content p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    margin-bottom: 0px;
+}
+
+.infotainment-slider .slick-track li+li {
+    margin-top: 30px !important;
+}
+
+/* infotainment-guideline-wrapper Css End */
+
+
+/* infotainment-final-wrapper Css Start */
+.infotainment-final {
+    border-radius: 20px;
+    background: #D7D1B3;
+    padding-block: 87px;
+}
+
+.infotainment-final .custom-col-10 .custom-row {
+    margin-inline: -43px;
+}
+
+.infotainment-final .custom-col-10 .custom-row .custom-col-8,
+.infotainment-final .custom-col-10 .custom-row .custom-col-4 {
+    padding-inline: 43px;
+}
+
+.infotainment-final-image-content p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.infotainment-final-image-content h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.infotainment-final-image img {
+    width: 100%;
+}
+
+/* infotainment-final-wrapper Css End */
+
+/* sprint-wrapper Css Start */
+.sprint-wrapper h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.sprint-wrapper h2 {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.sprint-image img {
+    width: 100%;
+}
+
+.sprint-wrapper .custom-row {
+    margin-inline: -79px;
+    gap: 50px 0px;
+}
+
+.sprint-wrapper .custom-row .custom-col-6,
+.sprint-wrapper .custom-row .custom-col-12 {
+    padding-inline: 79px;
+}
+
+/* sprint-wrapper Css End */
+
+/* deciding-wrapper Css Start */
+.deciding-wrapper>.container>.custom-row {
+    margin-inline: -19px;
+    gap: 50px 0px;
+}
+
+.deciding-wrapper>.container>.custom-row>.custom-col-6,
+.deciding-wrapper>.container>.custom-row>.custom-col-12 {
+    padding-inline: 19px;
+}
+
+.deciding-wrapper>.container>.custom-row>.custom-col-6 h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.deciding-wrapper>.container>.custom-row>.custom-col-6 p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.deciding-cover {
+    border-radius: 20px;
+    background: #D7D1B3;
+    padding: 26px;
+}
+
+.deciding-cover h2 {
+    font-weight: 400;
+    font-size: var(--font-24px);
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.deciding-cover ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-inline: -12px;
+}
+
+.deciding-cover ul li {
+    width: 50%;
+    flex: 0 0 auto;
+    padding-inline: 12px;
+}
+
+.deciding-cover ul li h3 {
+    font-weight: 200;
+    font-size: var(--font-20px);
+    line-height: normal;
+    margin-bottom: 37px;
+}
+
+.deciding-cover ul li p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.deciding-image img {
+    width: 100%;
+}
+
+/* deciding-wrapper Css Start */
+
+/* porsche-user-testing-wrapper Css Start */
+.porsche-user-testing-wrapper>.container>.custom-row {
+    margin-inline: -85px;
+}
+
+.porsche-user-testing-wrapper>.container>.custom-row>.custom-col-4,
+.porsche-user-testing-wrapper>.container>.custom-row>.custom-col-8 {
+    padding-inline: 85px;
+}
+
+.porsche-user-heading h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 42px;
+}
+
+.porsche-user-heading h3 {
+    font-weight: 400;
+    font-size: var(--font-24px);
+    line-height: normal;
+    color: #8E834C;
+    margin-bottom: 15px;
+}
+
+.porsche-user-heading p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.porsche-user-heading ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -25px;
+}
+
+.porsche-user-heading ul li {
+    width: 33.333%;
+    flex: 0 0 auto;
+    padding-inline: 25px;
+}
+
+.porsche-user-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.porsche-image {
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.68) 100%), url(../img/porsche/target-image1.png) lightgray 50% / cover no-repeat;
+    background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 9;
+    padding: 0px !important;
+    /* min-height: 350px; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.porsche-image img {
+    width: 100%;
+}
+
+.early-friction-image img {
+    height: 120px;
+}
+
+.testing-content {
+    padding: 10px 38px;
+    min-height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testing-row .testing-col:nth-child(1) .testing-content {
+    background-color: #D7D1B3;
+    color: #231F20;
+}
+
+.testing-row .testing-col:nth-child(2) .testing-content {
+    background-color: #8E834C;
+    color: #F1E9E6;
+}
+
+.testing-row .testing-col:nth-child(1) ul {
+    color: #231F20;
+}
+
+.testing-content p:has(span) {
+    font-weight: 200;
+    font-size: var(--font-20px);
+    margin-bottom: 25px;
+}
+
+.testing-content ul {
+    padding-left: 25px;
+}
+
+.testing-slider-dots button {
+    background-color: #D7D1B3;
+}
+
+.testing-slider-dots button.active {
+    background-color: #8E834C !important;
+}
+
+.testing-content ul li p {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.porsche-image h3 {
+    font-weight: 400;
+    font-size: var(--font-24px);
+    line-height: normal;
+    color: #F1E9E6;
+    position: relative;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.porsche-image h3::before {
+    content: "";
+    width: 41px;
+    height: 9px;
+    border-radius: 2px;
+    background: #F1E9E6;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.porsche-image p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    color: #F1E9E6;
+    margin-bottom: 0px;
+}
+
+.porsche-user-image-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -50px;
+}
+
+.porsche-user-col {
+    width: 50%;
+    flex: 0 0 auto;
+    padding-inline: 50px;
+}
+
+/* porsche-user-testing-wrapper Css End */
+
+/* early-friction-wrapper Css Start */
+.early-friction-wrapper .custom-row {
+    gap: 25px 0px;
+}
+
+.early-friction-wrapper h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.early-friction-wrapper p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.early-friction-wrapper .custom-row {
+    gap: 25px 0px;
+}
+
+.early-friction-cover ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -74px;
+}
+
+.early-friction-cover ul li {
+    width: 25%;
+    flex: 0 0 auto;
+    padding-inline: 74px;
+}
+
+.early-friction-image {
+    margin-bottom: 10px;
+}
+
+.early-friction-box h3 {
+    font-weight: 400;
+    font-size: var(--font-24px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.early-friction-box p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+/* early-friction-wrapper Css End */
+
+
+/*  impact-wrapper Css Start */
+.impact-wrapper .custom-row {
+    margin-inline: -60px;
+}
+
+.impact-wrapper .custom-row .custom-col-5,
+.impact-wrapper .custom-row .custom-col-7 {
+    padding-inline: 60px;
+}
+
+.impact-wrapper h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.impact-wrapper p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+/*  impact-wrapper Css End */
+
+/* final-driving Css Start */
+.final-driving {
+    background: linear-gradient(180deg, #FFF 0%, rgba(196, 145, 89, 0.60) 11.87%, rgba(173, 145, 174, 0.60) 30.61%, rgba(29, 31, 23, 0.60) 54.47%, rgba(143, 38, 31, 0.60) 80.43%, #FFF 100%);
+}
+
+.final-driving-cover .custom-row {
+    gap: 150px 0px;
+}
+
+.comfort-mod-col {
+    margin-inline: 10px !important;
+}
+
+.comform-mod-box img {
+    width: 100%;
+    height: 302px;
+}
+
+.confort-mode-slider {
+    margin-top: 25px;
+}
+
+.final-driving h2 {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.final-driving p {
+    font-weight: 200;
+    font-size: var(--font-16px);
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.final-driving-cover h3 {
+    font-weight: 600;
+    font-size: var(--font-48px);
+    line-height: normal;
+    max-width: 93%;
+    margin-inline: auto;
+    padding-inline: 15px;
+    margin-bottom: 25px;
+}
+
+.final-driving-image img {
+    width: 100%;
+}
+
+/* final-driving Css End */
+
+/* custom-wrapper Css Start */
+.custom-wrapper {
+    padding-top: 75px;
+}
+
+.custom-wrapper p {
+    font-weight: 400;
+    font-size: var(--font-32px);
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.custom-wrapper-image img {
+    width: 100%;
+}

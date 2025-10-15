@@ -1,0 +1,471 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Project Detail Page Specific Styles */
+
+/* Main Navigation (Single nav as per reference) */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    background: transparent;
+}
+
+.main-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hamburger-menu {
+    background: #2c2c2c;
+    border: none;
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu span {
+    width: 20px;
+    height: 2px;
+    background: white;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu:hover {
+    background: #3c3c3c;
+}
+
+.nav-tabs {
+    background: rgba(44, 44, 44, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 8px;
+    display: flex;
+    gap: 4px;
+}
+
+.nav-tab {
+    color: #999;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-family: 'Lexend', sans-serif;
+}
+
+.nav-tab:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-tab.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Hero Banner Section */
+
+.project-hero-content img {
+    width: 100%;
+}
+
+.project-hero-content {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.lowes-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.lowes-logo-blue {
+    background: #003f7f;
+    padding: 30px 60px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: perspective(1000px) rotateX(5deg);
+    transition: all 0.3s ease;
+}
+
+.lowes-logo-blue:hover {
+    transform: perspective(1000px) rotateX(0deg) translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.lowes-text {
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.scadpro-text {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Lexend', sans-serif;
+}
+
+/* Project Details Section */
+.project-details-section {
+    background: #f8f8f8;
+    padding: 80px 0;
+}
+
+.project-details-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.project-header-info {
+    margin-bottom: 60px;
+}
+
+.project-type-label {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block;
+    font-family: 'Lexend', sans-serif;
+}
+
+.project-main-title {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+    letter-spacing: -2px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.project-subtitle-text {
+    color: #666;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.project-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-info-item h3 {
+    color: #2c2c2c;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.project-info-item p {
+    color: #666;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend', sans-serif;
+}
+
+/* NDA Protected Content Section */
+.nda-protected-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.nda-image-container img {
+    width: 100%;
+}
+
+.nda-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.nda-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+
+.lowes-logo-white-container {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.lowes-text-white {
+    color: #003f7f;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.nda-text-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.nda-text-content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.contact-me-btn {
+    background: #2c2c2c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.contact-me-btn:hover {
+    background: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .project-nav-tabs {
+        display: none;
+    }
+    
+    .lowes-text {
+        font-size: 2.5rem;
+    }
+    
+    .scadpro-text {
+        font-size: 1.8rem;
+    }
+    
+    .project-main-title {
+        font-size: 2.5rem;
+    }
+    
+    .project-info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .nda-content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .nda-text-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-nav {
+        top: 80px;
+        padding: 15px 0;
+    }
+    
+    .project-nav-container {
+        padding: 0 1rem;
+    }
+    
+    .project-hero {
+        margin-top: 80px;
+        height: 80vh;
+    }
+    
+    .lowes-text {
+        font-size: 2rem;
+    }
+    
+    .scadpro-text {
+        font-size: 1.5rem;
+    }
+    
+    .project-details-section {
+        padding: 60px 0;
+    }
+    
+    .project-details-container {
+        padding: 0 1rem;
+    }
+    
+    .project-main-title {
+        font-size: 2rem;
+    }
+    
+    .project-info-grid {
+        padding: 30px 20px;
+    }
+    
+    .nda-protected-section {
+        padding: 60px 0;
+    }
+    
+    .nda-container {
+        padding: 0 1rem;
+    }
+    
+    .nda-content-grid {
+        gap: 30px;
+    }
+    
+    .lowes-text-white {
+        font-size: 2rem;
+    }
+    
+    .nda-text-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .nda-text-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-nav {
+        top: 60px;
+    }
+    
+    .project-hero {
+        margin-top: 60px;
+        height: 70vh;
+    }
+    
+    .lowes-logo-blue {
+        padding: 20px 40px;
+    }
+    
+    .lowes-text {
+        font-size: 1.5rem;
+    }
+    
+    .scadpro-text {
+        font-size: 1.2rem;
+    }
+    
+    .project-main-title {
+        font-size: 1.8rem;
+    }
+    
+    .project-info-grid {
+        padding: 20px 15px;
+        gap: 15px;
+    }
+    
+    .lowes-text-white {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+    }
+    
+    .nda-text-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contact-me-btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-details-section,
+.nda-protected-section {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Parallax effect for hero */
+.project-hero {
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    .project-hero {
+        background-attachment: scroll;
+    }
+}

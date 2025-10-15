@@ -1,0 +1,247 @@
+/* project-banner-wrapper Css Start */
+.project-banner-wrapper {
+    padding-block: 50px;
+    height: 600px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 150px;
+    line-height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 50px;
+    margin-bottom: 250px;
+}
+
+h1 span {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+/*  project-banner-wrapper Css End  */
+
+
+/* project-box-wrapper Css Start */
+.project-box-wrapper {
+    padding-block: 100px;
+    position: relative;
+}
+
+.project-box-wrapper::after {
+    content: "";
+    width: 100%;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    background-color: #0c0c0c;
+    z-index: 99;
+}
+
+.project-box-wrapper .custom-row {
+    margin-inline: 0px;
+    gap: 150px 0px;
+}
+
+.project-box-wrapper .custom-row .custom-col-6 {
+    padding-inline: 0px;
+}
+
+.project-image-cover {
+    position: relative;
+}
+
+.project-box-image {
+    width: 185px;
+    height: 185px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-image>img {
+    width: 100%;
+}
+
+.project-box-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.project-iamge-content {
+    padding: 25px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-inline: -25px;
+}
+
+.project-cover-heading,
+.project-cover-heading-content {
+    width: 50%;
+    flex: 0 0 auto;
+    padding-inline: 25px;
+}
+
+.project-cover-heading ul li p {
+    margin-bottom: 0px;
+}
+
+.project-cover-heading-content p {
+    margin-bottom: 0px;
+}
+
+.project-banner-heading {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+@media screen and (max-width:1800px) {
+    h1 {
+        font-weight: 600;
+        font-size: 125px;
+        line-height: 135px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px 39px;
+        margin-bottom: 170px;
+    }
+
+    .project-banner-wrapper {
+        padding-block: 50px;
+        height: 400px;
+    }
+
+    .project-box-wrapper .custom-row {
+        margin-inline: 0px;
+        gap: 100px 0px;
+    }
+}
+
+@media screen and (max-width:1680px) {
+    .project-banner-wrapper {
+        padding-block: 40px;
+        height: 350px;
+    }
+
+    .project-box-wrapper {
+        padding-block: 60px;
+        position: relative;
+    }
+
+    .project-iamge-content {
+        padding: 20px 15px;
+        margin-inline: -15px;
+    }
+
+    .project-cover-heading,
+    .project-cover-heading-content {
+        width: 50%;
+        flex: 0 0 auto;
+        padding-inline: 15px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    h1 {
+        font-weight: 600;
+        font-size: 90px;
+        line-height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px 26px;
+        margin-bottom: 50px;
+    }
+
+    .project-box-wrapper .custom-row {
+        margin-inline: 0px;
+        gap: 55px 0px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .project-box-wrapper .custom-row .custom-col-6 {
+        width: 100%;
+    }
+
+    .project-banner-wrapper {
+        padding-block: 40px;
+        height: auto;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px 15px;
+        margin-bottom: 30px;
+    }
+
+    .project-box-wrapper {
+        padding-block: 35px;
+        position: relative;
+    }
+
+    .project-box-wrapper .custom-row {
+        margin-inline: 0px;
+        gap: 30px 0px;
+    }
+
+    .project-cover-heading h2 {
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .project-iamge-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 0px;
+    }
+
+    .project-cover-heading,
+    .project-cover-heading-content {
+        width: 100%;
+        flex: 0 0 auto;
+        padding-inline: 15px;
+    }
+
+    .project-cover-heading ul {
+        margin-bottom: 20px;
+    }
+
+    .project-box-image {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        gap: 5px 0px;
+    }
+}

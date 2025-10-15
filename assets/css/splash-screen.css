@@ -1,0 +1,57 @@
+/* Splash Screen Styles */
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+}
+
+.splash-screen.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.splash-logo {
+    text-align: center;
+    color: #878787;
+    font-family: Droog;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.splash-logo span {
+    display: inline-block;
+    color: #878787;
+    transition: color 0.3s ease;
+}
+
+.splash-logo span.active {
+    color: #ffffff;
+}
+
+/* Alternative if you want to use the image instead */
+.splash-logo-img {
+    width: auto;
+    max-width: 80%;
+    height: auto;
+}
+
+/* Prevent body scroll while splash screen is active */
+body.splash-active {
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+.splash-logo {
+    font-size: 48px;
+}
+}
