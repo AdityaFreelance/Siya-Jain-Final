@@ -399,9 +399,8 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 0, // no delay between slides
-        speed: 8000,      // controls motion smoothness
-        cssEase: 'linear', // smooth continuous scroll
+        autoplaySpeed: 3000,
+        speed: 1000,
         dots: false,
         arrows: false,
         infinite: true,

@@ -53,9 +53,9 @@
 }
 
 .design-bottom {
-    max-width: 66%;
+    max-width: 67.8%;
     margin-right: auto;
-    margin-left: 7%;
+    margin-left: 6%;
     margin-top: 0%;
 }
 
@@ -89,12 +89,16 @@
     height: 100%;
     object-fit: cover;
 }
-.post-research-wrapper-cover .custom-col-10 .custom-row{
-    margin-inline:-30px;
+
+.post-research-wrapper-cover .custom-col-10 .custom-row {
+    margin-inline: -30px;
 }
-.post-research-wrapper-cover .custom-col-10 .custom-row .custom-col-4, .post-research-wrapper-cover .custom-col-10 .custom-row .custom-col-8{
+
+.post-research-wrapper-cover .custom-col-10 .custom-row .custom-col-4,
+.post-research-wrapper-cover .custom-col-10 .custom-row .custom-col-8 {
     padding-inline: 30px;
 }
+
 .understand-wrapper .container>.custom-row>.custom-col-6,
 .understand-wrapper .container>.custom-row>.custom-col-12 {
     padding-inline: 81px;

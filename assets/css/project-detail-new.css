@@ -927,6 +927,13 @@ ul.research-list li:nth-child(1) .research-box-container p::after,
     background: linear-gradient(177deg, #FFF 2.14%, rgba(255, 255, 255, 0.00) 12.82%, rgba(255, 255, 255, 0.00) 64.93%, #FFF 91.01%);
 }
 
+.main-insight-wrapper .custom-row .custom-col-7 {
+    padding-left: 150px !important;
+}
+.meet-slider-col {
+    margin-inline: 25px;
+}
+
 .main-insight-slider ul {
     list-style: none;
     padding: 0;
@@ -1342,6 +1349,10 @@ span.portfolio-icon {
     position: relative;
     z-index: 99;
     height: 600px;
+}
+
+.target-wrapper .custom-row .custom-col-6:nth-child(2) {
+    padding-left: 13%;
 }
 
 .target-wrapper::before {
