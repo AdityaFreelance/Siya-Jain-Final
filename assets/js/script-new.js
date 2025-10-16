@@ -399,10 +399,14 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 0, // no delay between slides
+        speed: 8000,      // controls motion smoothness
+        cssEase: 'linear', // smooth continuous scroll
         dots: false,
         arrows: false,
-        infinite: true
+        infinite: true,
+        pauseOnHover: false,
+        pauseOnFocus: false
     });
 });
 

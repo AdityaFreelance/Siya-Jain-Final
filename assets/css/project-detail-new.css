@@ -37,6 +37,13 @@
     --font-96px: calc(var(--base-font-size) * 6);
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid #000; */
+}
+
 html {
     overflow-x: hidden !important;
 }
@@ -130,6 +137,10 @@ video {
 .custom-col-9 {
     flex: 0 0 auto;
     padding-inline: 15px;
+}
+
+.meet-slider-col {
+    margin-inline: 20px;
 }
 
 .custom-col-12 {
@@ -3263,6 +3274,11 @@ span.portfolio-icon {
     top: 0px;
     left: 0px;
     z-index: -1;
+}
+
+.brand-subheading span.d-block {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .target-wrapper::after {

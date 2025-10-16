@@ -30,6 +30,8 @@
         margin-bottom: 30px;
     }
 
+
+
     .contect-wrapper .custom-row .custom-col-12 .custom-row {
         margin-inline: -30px;
     }
@@ -581,6 +583,13 @@
 @media screen and (max-width:1200px) {
     :root {
         --base-font-size: 10px !important;
+    }
+
+    .integreated-box {
+        padding: 33px 30px;
+        border-radius: 15px 0 0 0;
+        background: #F0DE3B;
+        min-height: 170px;
     }
 
     section.portfolio-wrapper .custom-col-12 .custom-row {
@@ -1304,7 +1313,7 @@
         display: inline-flex !important;
         justify-content: center;
         align-items: center;
-        color: var(--primary-color) !important;
+        color: #fff !important;
     }
 
     button.menu-open svg {
@@ -1668,7 +1677,7 @@
     }
 
     .custom-col-12:has(.how-second-image) .custom-row .custom-col-8 {
-        order: -q;
+        order: -1;
     }
 
     .approach-list-cover ul li {
@@ -1719,6 +1728,87 @@
         margin-inline: -15px;
         gap: 20px 0px;
     }
+
+    .custom-col-12:has(.how-second-image) .custom-row {
+        margin-inline: -15px;
+    }
+
+    .integrated-cover .custom-col-12 .custom-row .custom-col-6 {
+        padding-inline: 15px;
+    }
+
+    .integrated-cover .custom-col-12 .custom-row {
+        margin-inline: -15px;
+    }
+
+    .project-slider-cover .container {
+        margin-right: 0px;
+        padding-right: 15px;
+        max-width: 100%;
+    }
+
+    .branding-wrapper .custom-row .custom-col-6,
+    .deliverable-wrapper .custom-col-12 .custom-row .custom-col-6,
+    .how-third-section .custom-row .custom-col-6,
+    .competitor-cover .custom-col-8>.custom-row>.custom-col-6,
+    .experience-wrapper>.container>.custom-row>.custom-col-6,
+    .infotainment-guideline-wrapper .custom-row .custom-col-6,
+    .sprint-wrapper .custom-row .custom-col-6,
+    .sprint-wrapper .custom-row .custom-col-12,
+    .impact-wrapper .custom-row .custom-col-5,
+    .impact-wrapper .custom-row .custom-col-7,
+    .loop-secondry-research-list ul li {
+        padding-inline: 15px;
+    }
+
+    .deliverable-wrapper .custom-col-12 .custom-row. .branding-wrapper .custom-row,
+    .competitor-cover .custom-col-8>.custom-row,
+    .experience-wrapper>.container>.custom-row,
+    .experience-wrapper>.container>.custom-row {
+        margin-inline: -15px;
+    }
+
+    .deliverable-wrapper .custom-col-12 .custom-row,
+    .branding-wrapper .custom-row,
+    .how-third-section .custom-row,
+    .experience-wrapper>.container>.custom-row,
+    .infotainment-guideline-wrapper .custom-row,
+    .sprint-wrapper .custom-row,
+    .impact-wrapper .custom-row,
+    .conversation-cover>.custom-row>.custom-col-12>.custom-row,
+    .loop-secondry-research-list ul {
+        margin-inline: -15px;
+    }
+
+    .final-driving-cover .custom-row {
+        gap: 30px 0px;
+        margin-inline: 0px !important;
+    }
+
+    section.competitor-wrapper .container>.custom-row {
+        margin-inline: 0px;
+        gap: 50px 0px;
+    }
+
+    .target-wrapper-porsche::after,
+    .target-wrapper-porsche>.container::before {
+        display: none;
+    }
+
+    .target-wrapper-porsche::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/porsche/target-image1.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
 }
 
 
@@ -1726,6 +1816,14 @@
 @media screen and (max-width:575px) {
     :root {
         --base-font-size: 8px !important;
+    }
+
+    .custom-col-4 {
+        width: 100%;
+    }
+
+    .custom-col-8 {
+        width: 100%;
     }
 
     a.nav-link {
@@ -1831,6 +1929,10 @@
         height: auto;
     }
 
+    .conversation-cover>.custom-row>.custom-col-12>.custom-row>.custom-col-6 {
+        padding-inline: 15px;
+    }
+
 }
 
 
@@ -1838,6 +1940,75 @@
 @media screen and (max-width:475px) {
     :root {
         --base-font-size: 8px !important;
+    }
+
+    ul.testing-slider-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px 15px;
+        list-style: none;
+        margin-block: 15px;
+    }
+
+    .comform-mod-box img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .testing-content {
+        padding: 10px 10px;
+        min-height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .testing-content ul li p {
+        margin-bottom: 0px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .testing-content ul {
+        padding-left: 15px;
+    }
+
+    .loop-secondry-research-list ul li {
+        width: 100%;
+        flex: 0 0 auto;
+        padding-inline: 51px;
+    }
+
+    .conversation-box {
+        border-radius: 20px;
+        border: 4px solid #F0DE3B;
+        padding: 35px 25px;
+        position: relative;
+    }
+
+    .loop-secondry-research-list ul {
+        gap: 20px 0px;
+    }
+
+    .loop-image {
+        display: none;
+    }
+
+    .loop-secondry-research-list {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .testing-slider-dots button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #E5EBF0;
+        cursor: pointer;
+        padding: 0;
+        border: 0px;
     }
 
     .banner-wrapper {
@@ -1914,22 +2085,32 @@
     }
 
     .integreated-col {
-        width: 100%;
+        width: 50%;
         flex: 0 0 auto;
     }
 
     .integreated-box {
-        padding: 20px 30px;
+        padding: 12px 20px;
         border-radius: 0px !important;
         background: #F0DE3B;
+        min-height: 190px;
+    }
+
+    .integreated-box ul li p {
+        text-align: left;
     }
 
     .integreated-box ul {
-        padding-left: 25px;
+        padding-left: 15px;
         text-align: left;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .custom-integreated-slider .slick-dots li button {
+        width: 10px;
+        height: 10px;
     }
 
 }
