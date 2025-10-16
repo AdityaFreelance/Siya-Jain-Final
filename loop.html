@@ -278,10 +278,10 @@
                             </div>
                             <div class="custom-col-7">
                                 <div class="summary-cover-image">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WuymdQJOsJQ"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <video autoplay loop muted playsinline class="img-fluid">
+                                        <source src="assets/videos/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
                             </div>
                         </div>
@@ -1463,7 +1463,7 @@
                             </ul>
                         </div>
                         <div class="integreated-box-image">
-                            <img src="assets/img/loop/integreated-left4.png" alt="image" class="img-fluid">
+                            <img src="assets/img/loop/integreated-right4.png" alt="image" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -1942,7 +1942,9 @@
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true,
-                arrows: false
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000
             });
         });
     </script>
